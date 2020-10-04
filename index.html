@@ -7,29 +7,43 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
 
-
     <title>Home - Dystonic</title>
 </head>
 <body>
     <div class="container">
+        <!-- Jumbotron -->
         <div class="jumbotron text-center">
             <h1 class="display-4">Dystonic</h1>
+            <!-- intro -->
             <div id="intro">
                 <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                 <hr class="my-4">
                 <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
             </div>
+
+            <!-- Quiz -->
             <div class="row">
                 <div class="col-12">
-                        <h1 onmouseover=showImage() onmouseout="hideImage()" id="answer"></h1>
+                        <h1 onmouseover=PeekImage() onmouseout="PeekImage()" id="answer"></h1>
                         <img onclick=revealAnswer() id="q-img" alt="" display="none">
                 </div>
             </div>
-            <a id="btn-nav" onclick="newImage()" class="btn btn-primary btn-lg" href="#" role="button">Start</a>
-        </div>
 
+            <!-- buttons -->
+            <a id="btn-nav" onclick="newImage()" class="btn btn-primary btn-lg" href="#" role="button">Start</a>
+            <a id="btn-help" onclick="toggleHelp()" class="btn btn-danger btn-lg" href="#" role="button">Help</a>
+
+            <!-- Instructions/Help -->
+            <div id="help" style="display: none;">
+                <p>Start - Click Start/Left or Right Arrow Keys</p>
+                <p>New Image - Click Next/Left or Right Arrow Keys</p>
+                <p>Reveal Answer - Click on Image/Press Spacebar </p>
+                <p>Peek Image - Hover mouse over Image </p>
+            </div>
+        </div>
     </div>
 
+    <!-- scripts -->
     <script type="text/javascript" src="js/events.js"></script>
 </body>
 

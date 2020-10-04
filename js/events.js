@@ -17,8 +17,15 @@ function hideIntro(){
     intro.style.display = "none";
     var btnNav = document.getElementById('btn-nav');
     btnNav.textContent = "Next";
+}
 
-
+function toggleHelp(){
+    var help = document.getElementById('help');
+    if (help.style.display === "none") {
+        help.style.display = "block";
+    } else {
+        help.style.display = "none";
+      }
 }
 
 function revealAnswer(){
@@ -33,14 +40,13 @@ function revealAnswer(){
         }
       }
 
-function showImage(){
+function PeekImage(){
         var img = document.getElementById('q-img');
-          img.style.display = "block";
-      }
-
-function hideImage(){
-        var img = document.getElementById('q-img');
-          img.style.display = "none";
+        if (img.style.display === "none") {
+            img.style.display = "block";
+        } else {
+            img.style.display = "none";
+          }
       }
 
 function newImage(){

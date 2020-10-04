@@ -15,7 +15,7 @@ body {
     min-width: 100%;
     font-family: 'Abel', sans-serif;
     font-size: 14px;
-    background-color: rgb(214, 206, 163);
+    background-color: rgb(171, 169, 173);
 }
 
 /* responsive img */
@@ -26,7 +26,7 @@ img{
 }
 
 .jumbotron{
-    background-color: rgb(196, 187, 141);
+    background-color: rgb(241, 237, 217);
     box-shadow: 10px 10px 5px grey;
     height: 100%;
 }
