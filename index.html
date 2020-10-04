@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+
     <title>Home - Dystonic</title>
 </head>
 <body>
     <div class="container">
         <!-- Jumbotron -->
         <div class="jumbotron text-center">
-            <h1 class="display-4">Dystonic</h1>
+            <h1 id="title" class="display-4">Dystonic</h1>
             <!-- intro -->
             <div id="intro">
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <p class="lead">A simple application to help remember our loved ones.</p>
                 <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p>Click Start to get started or Click Help at anytime to look at instructions</p>
             </div>
 
             <!-- Quiz -->
@@ -30,15 +32,17 @@
             </div>
 
             <!-- buttons -->
-            <a id="btn-nav" onclick="newImage()" class="btn btn-primary btn-lg" href="#" role="button">Start</a>
-            <a id="btn-help" onclick="toggleHelp()" class="btn btn-danger btn-lg" href="#" role="button">Help</a>
+            <div class="buttons">
+                <a id="btn-nav" onclick="newImage()" class="btn btn-primary btn-lg" href="#q-img" role="button">Start</a>
+                <a id="btn-help" onclick="toggleHelp()" class="btn btn-danger btn-lg" href="#title" role="button">Help</a>
+            </div>
 
             <!-- Instructions/Help -->
             <div id="help" style="display: none;">
-                <p>Start - Click Start/Left or Right Arrow Keys</p>
-                <p>New Image - Click Next/Left or Right Arrow Keys</p>
-                <p>Reveal Answer - Click on Image/Press Spacebar </p>
-                <p>Peek Image - Hover mouse over Image </p>
+                <p><strong>Start</strong>- Click Start/Left or Right Arrow Keys</p>
+                <p><strong>Next Image</strong> - Click Next/Left or Right Arrow Keys</p>
+                <p><strong>Reveal Answer</strong> - Click on Image/Press Spacebar </p>
+                <p><strong>Peek Image</strong> - Hover mouse over answer when shown </p>
             </div>
         </div>
     </div>

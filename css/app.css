@@ -13,7 +13,7 @@ html {
 body {
     max-width: 100%;
     min-width: 100%;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Quattrocento', serif;
     font-size: 14px;
     background-color: rgb(171, 169, 173);
 }
@@ -29,4 +29,29 @@ img{
     background-color: rgb(241, 237, 217);
     box-shadow: 10px 10px 5px grey;
     height: 100%;
+}
+
+@media (min-width:350px) {
+
+}
+
+@media (min-width:650px) {
+    
+}
+
+@media (min-width:1000px) {
+    .jumbotron{
+        margin-top: 10%;
+        background-color: rgb(241, 237, 217);
+        box-shadow: 10px 10px 5px grey;
+        height: 100%;
+    }
+
+    .buttons{
+        padding-top: 3%;
+    }
+
+    #help{
+        margin: 5%;
+    }
 }
