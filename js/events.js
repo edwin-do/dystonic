@@ -4,6 +4,7 @@ var imagesAlt = ["Tam - Brother", "Cheryl - Grandchild", "Edward - Grandchild", 
 document.addEventListener('keydown', logKey);
 
 function logKey(e) {
+  // keyboard events
     if (e.code == "ArrowRight" | e.code == "ArrowLeft"){
         newImage();
     }
