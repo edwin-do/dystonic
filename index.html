@@ -15,10 +15,10 @@
     <div class="container">
         <!-- Jumbotron -->
         <div class="jumbotron text-center">
-            <h1 id="title" class="display-4">Dystonic</h1>
+            <h1 id="title">Dystonic</h1>
             <!-- intro -->
             <div id="intro">
-                <p class="lead">A simple application to help remember our loved ones.</p>
+                <p>A simple application to help us remember our loved ones.</p>
                 <hr class="my-4">
                 <p>Click Start to get started or Click Help at anytime to look at instructions</p>
             </div>
@@ -33,14 +33,15 @@
 
             <!-- buttons -->
             <div class="buttons">
-                <a id="btn-nav" onclick="newImage()" class="btn btn-primary btn-lg" href="#q-img" role="button">Start</a>
-                <a id="btn-help" onclick="toggleHelp()" class="btn btn-danger btn-lg" href="#title" role="button">Help</a>
+                <a id="btn-nav" onclick="newImage()" class="btn btn-info btn-lg" href="#answer" role="button">Start</a>
+                <a id="btn-help" onclick="toggleHelp()" class="btn btn-danger btn-lg" href="#help" role="button">Help</a>
             </div>
 
             <!-- Instructions/Help -->
             <div id="help" style="display: none;">
-                <p><strong>Start</strong>- Click Start/Left or Right Arrow Keys</p>
-                <p><strong>Next Image</strong> - Click Next/Left or Right Arrow Keys</p>
+                <p>Navigate through the pictures and try to recall their names and your relationship with them!</p>
+                <p><strong>Start</strong>- Click Start/Press Left or Right Arrow Keys</p>
+                <p><strong>Next Image</strong> - Click Next/Press Left or Right Arrow Keys</p>
                 <p><strong>Reveal Answer</strong> - Click on Image/Press Spacebar </p>
                 <p><strong>Peek Image</strong> - Hover mouse over answer when shown </p>
             </div>

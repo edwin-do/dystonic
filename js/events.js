@@ -13,13 +13,16 @@ function logKey(e) {
   }
 
 function hideIntro(){
+    // hide the Intro section
     var intro = document.getElementById('intro');
     intro.style.display = "none";
     var btnNav = document.getElementById('btn-nav');
     btnNav.textContent = "Next";
+    document.getElementById("title").textContent = "Who is this?";
 }
 
 function toggleHelp(){
+    //show/hide the help section
     var help = document.getElementById('help');
     if (help.style.display === "none") {
         help.style.display = "block";
@@ -29,6 +32,7 @@ function toggleHelp(){
 }
 
 function revealAnswer(){
+        // display the answer and hide image
         var img = document.getElementById("q-img");
         var ans = document.getElementById("answer");
         if (img.style.display === "none") {
@@ -37,11 +41,12 @@ function revealAnswer(){
         } else {
           img.style.display = "none";
           ans.style.display = "block";
-          ans.textContent = img.alt.toString();
+          ans.textContent = img.alt.toString(); 
         }
       }
 
 function PeekImage(){
+        // peek image when mouse is over
         var img = document.getElementById('q-img');
         if (img.style.display === "none") {
             img.style.display = "block";
